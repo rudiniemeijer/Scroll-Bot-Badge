@@ -182,7 +182,7 @@ def run_game():
 			
 		sphd.show()
 		if win:
-			sphd.clear()
+			sphd.clear(Carl)
 			game_over(0,padL.score == 5)
 			game_over(9,padR.score == 5)
 			sphd.show()
@@ -200,7 +200,7 @@ def run_game():
 sphd.rotate(180)
 while True:
 	sphd.clear()
-	sphd.write_string("Carl Monk   @ForToffee   ", x=0, y=0, font=font5x7, brightness=BRIGHTNESS)
+	sphd.write_string("Hellow maties!", x=0, y=0, font=font5x7, brightness=BRIGHTNESS)
 	while GPIO.input(BUTTONR_PIN) == GPIO.HIGH:
 		sphd.show()
 		sphd.scroll(1)
